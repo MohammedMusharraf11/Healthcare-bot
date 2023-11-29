@@ -1,0 +1,18 @@
+| ConditionID | ConditionName      | Symptoms                          | Treatment                       | Notes                                      |
+|--------------|---------------------|-----------------------------------|---------------------------------|--------------------------------------------|
+| 1            | Burns               | Redness, blisters, pain           | Cool the burn with water        | Do not use ice or very cold water           |
+| 2            | Allergic Reaction   | Itching, swelling, difficulty...  | Administer epinephrine if...   | Seek medical attention immediately        |
+| 3            | Heart Attack        | Chest pain, shortness of breath...| Call emergency services, chew...| Keep the person calm and reassure them      |
+
+| InjuryID | InjuryName          | Symptoms                          | FirstAidProcedure               | Notes                                      |
+|----------|---------------------|-----------------------------------|---------------------------------|--------------------------------------------|
+| 1        | Fracture            | Pain, swelling, deformity          | Immobilize the injured area...  | Do not try to realign the bone yourself    |
+| 2        | Sprain              | Pain, swelling, limited...        | Rest, Ice, Compression, Elevation| Avoid putting weight on the injured area   |
+| 3        | Nosebleed           | Bleeding from the nose             | Pinch the nostrils together... | Lean forward to avoid swallowing blood     |
+
+| ProcedureID | ProcedureName      | Steps                             | Notes                                      |
+|-------------|---------------------|-----------------------------------|--------------------------------------------|
+| 1           | CPR                 | Check responsiveness, call 911... | Perform chest compressions at a rate...   |
+| 2           | Choking            | Encourage coughing, perform...    | If the person cannot breathe, perform... |
+| 3           | First Aid for Cuts  | Clean the wound, apply an...      | Use a sterile dressing to cover the cut   |
+

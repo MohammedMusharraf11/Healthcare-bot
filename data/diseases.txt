@@ -1,0 +1,13 @@
+These are the diseases and symptoms
+If the user is suffering from the all symptoms for a particuluar disease then give the disease as output
+id,disease,symptoms
+1,Common Cold,Runny nose,Cough,Sneezing,Sore throat
+2,Influenza,Fever,Cough,Body aches,Fatigue
+3,COVID-19,Fever,Cough,Shortness of breath,Fatigue
+4,Headache,Tension headache,Throbbing headache,Sensitivity to light
+5,Stomach Flu(Norovirus),Nausea,Vomiting,Diarrhea,Abdominal pain
+6,Asthma,Shortness of breath,Wheezing,Chest tightness,Cough
+7,Allergies,Sneezing,Runny or stuffy nose,Itchy or watery eyes
+8,Diabetes,Frequent urination,Excessive thirst,Unexplained weight loss,Fatigue
+9,Hypertension,Headache,Shortness of breath,Chest pain,Dizziness
+10,Migraine,Severe headache,Visual disturbances,Sensitivity to light or sound

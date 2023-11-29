@@ -1,0 +1,8 @@
+This is a data of appointments 
+
+id,date,time,doctor,patient
+1,2023-12-01,10:00 AM,Dr. Smith,John Doe
+2,2023-12-02,02:30 PM,Dr. Johnson,Jane Smith
+3,2023-12-03,11:15 AM,Dr. Davis,Robert Johnson
+4,2023-12-04,03:45 PM,Dr. Anderson,Susan White
+5,2023-12-05,09:30 AM,Dr. Brown,Emily Davis

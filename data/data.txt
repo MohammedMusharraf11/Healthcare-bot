@@ -1,0 +1,21 @@
+symptoms of the flu are : Common symptoms of the flu include fever, cough, and body aches.
+
+ how can i prevent the flu:  To prevent the flu, it's recommended to get vaccinated annually, practice good hand hygiene, and avoid close contact with sick individuals.
+
+ What should I do if I have a sore throat? : If you have a sore throat, you can try gargling with warm saltwater, staying hydrated, and rest. If symptoms persist, consult a healthcare professional.
+ 
+Tell me about healthy eating habits are :  Maintaining a balanced diet with fruits, vegetables, lean proteins, and whole grains is essential for overall health. Limiting processed foods and sugar is also beneficial.
+
+ What is the recommended amount of exercise per week? : Adults should aim for at least 150 minutes of moderate-intensity aerobic activity or 75 minutes of vigorous-intensity activity per week, along with muscle-strengthening activities on two or more days.
+
+User: How can I manage stress?
+Bot: Stress management techniques include deep breathing, meditation, exercise, and maintaining a healthy work-life balance.
+
+User: Can you provide information on diabetes?
+Bot: Diabetes is a chronic condition that affects how your body processes blood sugar. It's crucial to manage blood sugar levels through medication, diet, and regular monitoring.
+
+User: When should I see a doctor?
+Bot: If you experience persistent or severe symptoms, it's advisable to consult a healthcare professional. Don't hesitate to seek medical attention if you are uncertain about your health.
+
+User: Goodbye
+Bot: Goodbye! If you have more questions in the future, feel free to ask.

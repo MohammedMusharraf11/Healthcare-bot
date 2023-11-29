@@ -1,0 +1,109 @@
+
+First Name: John
+Last Name: Smith
+DOB: 1980-05-15
+Gender: Male
+Phone Number: 555-1234
+Medical Condition: Hypertension
+Allergies: None
+Prescription Details: Lisinopril 10mg, once daily
+Last Appointment Date: 2023-01-10
+Patient ID: P002
+
+First Name: Emily
+Last Name: Johnson
+DOB: 1992-08-22
+Gender: Female
+Phone Number: 555-5678
+Medical Condition: Type 2 Diabetes
+Allergies: Penicillin
+Prescription Details: Metformin 500mg, twice daily
+Last Appointment Date: 2023-02-05
+Patient ID: P003
+
+First Name: Michael
+Last Name: Davis
+DOB: 1975-03-10
+Gender: Male
+Phone Number: 555-9876
+Medical Condition: Asthma
+Allergies: Dust mites
+Prescription Details: Albuterol inhaler, as needed
+Last Appointment Date: 2023-03-20
+Patient ID: P004
+
+First Name: Sarah
+Last Name: Anderson
+DOB: 1988-11-05
+Gender: Female
+Phone Number: 555-4321
+Medical Condition: Migraines
+Allergies: None
+Prescription Details: Sumatriptan 50mg, as needed
+Last Appointment Date: 2023-04-15
+Patient ID: P005
+
+First Name: Robert
+Last Name: Chang
+DOB: 1964-09-18
+Gender: Male
+Phone Number: 555-8765
+Medical Condition: Osteoarthritis
+Allergies: NSAIDs
+Prescription Details: Acetaminophen 500mg, as needed
+Last Appointment Date: 2023-05-12
+Patient ID: P006
+
+First Name: Jessica
+Last Name: Ramirez
+DOB: 1995-06-30
+Gender: Female
+Phone Number: 555-2345
+Medical Condition: Seasonal Allergies
+Allergies: Pollen
+Prescription Details: Loratadine 10mg, once daily
+Last Appointment Date: 2023-06-08
+Patient ID: P007
+
+First Name: William
+Last Name: Miller
+DOB: 1972-04-12
+Gender: Male
+Phone Number: 555-6543
+Medical Condition: High Cholesterol
+Allergies: None
+Prescription Details: Atorvastatin 20mg, once daily
+Last Appointment Date: 2023-07-19
+Patient ID: P008
+
+First Name: Olivia
+Last Name: Turner
+DOB: 1986-01-25
+Gender: Female
+Phone Number: 555-7890
+Medical Condition: Anxiety
+Allergies: None
+Prescription Details: Sertraline 50mg, once daily
+Last Appointment Date: 2023-08-14
+Patient ID: P009
+
+First Name: Daniel
+Last Name: Lee
+DOB: 1978-07-08
+Gender: Male
+Phone Number: 555-3210
+Medical Condition: Hypothyroidism
+Allergies: None
+Prescription Details: Levothyroxine 75mcg, once daily
+Last Appointment Date: 2023-09-23
+Patient ID: P010
+
+First Name: Mia
+Last Name: Patel
+DOB: 1990-12-03
+Gender: Female
+Phone Number: 555-2109
+Medical Condition: Depression
+Allergies: None
+Prescription Details: Escitalopram 10mg, once daily
+Last Appointment Date: 2023-10-05
