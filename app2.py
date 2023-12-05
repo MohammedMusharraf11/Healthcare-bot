@@ -6,16 +6,55 @@ import openai
 from llama_index import SimpleDirectoryReader
 import random
 import pypdf
+import pyttsx3
+import requests
+import json
+from google.oauth2 import service_account
+import googlemaps
 
 # Set Streamlit page configuration
 st.set_page_config(page_title="Healthcare Bot", page_icon="👩‍⚕️", layout="centered", initial_sidebar_state="auto", menu_items=None)
 
 # Set OpenAI API key
-openai.api_key = "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"
+openai.api_key = "YOUR_API_KEY"
+#api_key = "AIzaSyDG2A-JEySKjaDMqNPSEgdA_EOusVsjeFM"
+def speak_response(response_content):
+    engine = pyttsx3.init()
+    engine.say(response_content)
+    engine.runAndWait()
+
+api_key = "apikey 5fihyYtS6JwVICEuSzrMtG:3YcxAGXrrHIia132kOGdY1"
+
+# Example coordinates (replace with the user's location)
+latitude = 12.904103491581367
+longitude = 77.63332323453498
+
+# Define API endpoint for nearby pharmacies
+api_url = f"https://api.collectapi.com/health/dutyPharmacy?ilce=%C3%87ankaya&il=Ankara"
+
+# Set up headers with the API key
+headers = {
+    'content-type': "application/json",
+    'authorization': f"apikey {api_key}"
+}
+
+
+
+#Define your client
+##gmaps = googlemaps.Client(key=api_key)
+#Define your search
+#places_results = gmaps.places_nearby(location = "12.904103491581367, 77.63332323453498" , radius= 40000, open_now = False, type = "pharmacy" )
+
+#for place in places_results["results"]:
+ #   my_fields= ['name', 'formatted_phone_number', 'type']
+#    place_details = gmaps.place(fields = my_fields)
+
+
 
 # Display title and introductory message
 st.title("Have a Convo with your Healthcare Bot")
 st.write("Arguments generate heat, and discussion throws light. In argument, it is seen who is right, and in discussion, it is seen what is RIGHT!")
+
 
 # Initialize chat messages history
 if "messages" not in st.session_state.keys():
@@ -46,6 +85,11 @@ waiting_messages = [
                 "Give me a second, I'm working on it...",
             ]
 
+
+
+
+voice_checkbox = st.checkbox("🔊")
+
 # Initialize the chat engine
 if "chat_engine" not in st.session_state.keys():
     st.session_state.chat_engine = index.as_chat_engine(chat_mode="condense_question", verbose=True)
@@ -58,6 +102,7 @@ if prompt := st.chat_input("Your question"):
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.write(message["content"])
+
 
 # If last message is not from the assistant, generate a new response
 if st.session_state.messages[-1]["role"] != "assistant":
@@ -94,29 +139,41 @@ if st.session_state.messages[-1]["role"] != "assistant":
                 response_content = random.choice(greeting_responses)
             elif any(keyword in user_input for keyword in ["ok", "great", "nice", "cool"]):
                 response_content = random.choice(engaging_responses)
-            elif any(keyword in user_input for keyword in ["bye", "thank you"]):
-                feedback_form = st.form(key="feedback_form")
-                feedback = feedback_form.text_area("How was your experience? Any feedback is appreciated.")
-                submit_feedback = feedback_form.form_submit_button("Submit Feedback")
-                if submit_feedback:
-                    # Process feedback
-                    feedback_filename = "feedback1.txt"
-                    with open(feedback_filename, "w") as file:
-                        file.write(feedback)
-                        st.success("Thank you for your feedback!")
-                        file.close()
-                response_content = random.choice(farewell_responses)
+        
             elif any(keyword in user_input for keyword in ["book", "schedule appointment", "looking for appointment", "need an appointment"]):
                 response_content = "Our Team is still working on importing the appointments form in the same window. As of now, you can click above and get scheduled for your appointment."
                 st.link_button("Go to appointment form", "https://appointments-pesu-healthcare.streamlit.app/")
+            
+            elif any(keyword in user_input for keyword in ["I am suffering from ", "Disease Diagnosis" , "symptomps", "I'm not feeling well.",
+                                                                "I have some symptoms. Can you help me figure out what might be wrong?",
+                                                                "Feeling sick, need advice." ]):
+                response_content="Please click the below button for disease dignosis"
+                st.link_button("Disease Diagnosis", "https://disease-diagnosis-pesu.streamlit.app/")
+            
+            
+            elif any(keyword in user_input for keyword in ["medical", "pharmacy", "hospital"]):
+                response_content = place_details
+           
+           
             else:
                 # Use chat engine to generate response
                 response = st.session_state.chat_engine.chat(prompt)
                 response_content = response.response
-
             # Display response content
             st.write(response_content)
-
+            if voice_checkbox:
+                speak_response(response_content)
+        
+           
+           
             # Append the response to the chat history
-            message = {"role": "assistant", "content": response_content}
-            st.session_state.messages.append(message)
+        message = {"role": "assistant", "content": response_content}
+        st.session_state.messages.append(message)
+
+
+
+
+
+
+
+          
